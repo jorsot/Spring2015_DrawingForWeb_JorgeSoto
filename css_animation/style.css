@@ -1,0 +1,113 @@
+/*Layer 7*/
+
+.ambience {
+
+}
+
+.amb-darkness{
+	position: absolute;
+	background: url("img/amb-darkness.svg") repeat center center;
+}
+
+.amb-sunlight-all{
+	background: transparent url("img/amb-sunlight-all.svg") repeat;
+
+}
+
+
+.stars {
+	background: transparent url("img/stars.svg") repeat;
+
+}
+
+.cloud1{
+	background: transparent url("img/cloud1.svg") repeat;
+
+}
+
+.cloud2{
+	background: transparent url("img/cloud2.svg") repeat;
+
+}
+
+.cloud3 {
+	background: transparent url("img/cloud3.svg") repeat;
+
+}
+
+/*Layer 6*/
+
+.trees{
+
+}
+
+.trees1{
+	background: transparent url("img/trees1.svg") repeat;
+
+}
+.trees2{
+	background: transparent url("img/trees2.svg") repeat;
+
+}
+
+/*Layer 5*/
+.ambience-back{
+
+}
+
+.amb-sunlight-back{
+	background: transparent url("img/amb-sunlight-back.svg") repeat;
+
+}
+
+/*Layer 4*/
+.volcano {
+	background: transparent url("img/volcano.svg") repeat;
+
+}
+
+/*Layer 3*/
+.smoke {
+
+}
+
+.smoke1 {
+	background: transparent url("img/smoke1.svg") repeat;
+
+}
+
+.smoke2 {
+	background: transparent url("img/smoke2.svg") repeat;
+
+}
+
+.smoke3 {
+	background: transparent url("img/smoke3.svg") repeat;
+}
+
+/*Layer 2*/
+.crater {
+	background: transparent url("img/crater.svg") repeat;
+
+}
+
+
+/*Layer 1*/
+.sky {
+
+}
+
+.night {
+	background: transparent url("img/sky-night.svg") repeat;
+
+}
+
+.twilight {
+	background: transparent url("img/sky-twilight.svg") repeat;
+	
+}
+
+.day {
+	background: transparent url("img/sky-day.svg") repeat;
+
+}

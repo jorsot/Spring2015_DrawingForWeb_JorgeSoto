@@ -1,25 +1,30 @@
+
+
 *{
   margin: 0;
   padding: 0;
 	list-style: none;
 	text-decoration: none;
+	transition: .3s
 }
-html{
-  height: 100%;
-}
+
 body{
-  background: #ffffff;
+	background: transparent url("lorem.png");
   color: black;
   font: 1.2em "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1em;
   height: 100%;
+
 }
-/*.clear{ clear:both; }*/
+
+html{
+  height: 100%;
+}
 
 header{
 	padding: 20px;
 	background: #4fe;
-	opacity: .6;
+	opacity: .9;
 }
 
 header a {
@@ -31,7 +36,7 @@ header a {
 
 header:hover {
 	background:red;
-	transition: .3s;
+	opacity: .5;
 }
 
 .container{
@@ -39,6 +44,7 @@ header:hover {
   width: 100%;
 	height:100%;
 }
+
 
 
 #wrapper {
@@ -58,7 +64,9 @@ h1 {
 
 }
 
-#primary {
+.container h1 {
+	background: #fff;
+	opacity: .8;
 }
 
 #primary ul li{
@@ -74,14 +82,31 @@ h1 {
 
 #primary ul li:hover{
 	background:#4df;
-	transition:.4s;
 	width:100%;
-	font-size: 1.1em;
-}
+	opacity: 1;
+	}
 
 #assignments a {
 	color:white;
 	font-size: 1em;
 	font-family: 'Slabo 27px', serif;
+
+}
+
+#primary .future {
+	background: red;
+	opacity: .05;
+}
+
+#primary .future:hover {
+	background: red;
+	opacity: .6;
+	width:100%;
+}
+
+@media only screen and (max-width: 880px){
+#wrapper { width: 90%;}
+
+#primary ul li{width: 50%;}
 
 }

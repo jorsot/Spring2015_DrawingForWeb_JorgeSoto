@@ -1,5 +1,3 @@
-
-
 *{
 margin: 0;
 padding: 0;
@@ -7,9 +5,9 @@ padding: 0;
 
 
 
-.clouds h1 {
+.clouds {
 font-family: 'Amatic SC';
-font: 5em 'Amatic SC', cursive;
+font: 3em 'Amatic SC', cursive;
 font-weight:700;
 text-align: center;
 transform: translateX(-2%);
@@ -102,9 +100,6 @@ opacity: 0;
 50% {opacity: .3}
 100% {left: 300%; opacity: 0}
 }
-
-
-
 
 .stars{
 top: -50px;

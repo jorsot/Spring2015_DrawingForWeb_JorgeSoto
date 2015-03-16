@@ -12,14 +12,8 @@
 }
 
 .container{
-  background: rgb(69,79,160); /* Old browsers */
-  background: -moz-linear-gradient(top,  rgba(69,79,160,1) 5%, rgba(253,218,193,1) 60%, rgba(27,0,9,1) 98%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%,rgba(69,79,160,1)), color-stop(60%,rgba(253,218,193,1)), color-stop(98%,rgba(27,0,9,1))); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  rgba(69,79,160,1) 5%,rgba(253,218,193,1) 60%,rgba(27,0,9,1) 98%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  rgba(69,79,160,1) 5%,rgba(253,218,193,1) 60%,rgba(27,0,9,1) 98%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  rgba(69,79,160,1) 5%,rgba(253,218,193,1) 60%,rgba(27,0,9,1) 98%); /* IE10+ */
-  background: linear-gradient(to bottom,  rgba(69,79,160,1) 5%,rgba(253,218,193,1) 60%,rgba(27,0,9,1) 98%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#454fa0', endColorstr='#1b0009',GradientType=0 ); /* IE6-9 */
+  background: url("img/sky-day.png");
+  -webkit-animation:sky_animation 20s 3s ease-out infinite alternate;
 
   height: 782px;
   width: 100%;
@@ -128,6 +122,20 @@
   66% { left: -15px;}
   100%    {top: -300px; opacity: 0; left: 30px;}
 }
+
+
+@-webkit-keyframes sky_animation {
+  0% {background: transparent url('img/sky-day.png')}
+  50% {background: transparent url('img/sky-twilight.png')}
+  100% {background: transparent url('img/sky-night.png')}
+}
+
+@keyframes sky_animation {
+  0% {background: transparent url('img/sky-day.png')}
+  50% {background: transparent url('img/sky-twilight.png')}
+  100% {background: transparent url('img/sky-night.png')}
+}
+
 
 .trees-01{ background: transparent url('img/trees2.png') repeat-x bottom center; }
 .trees-02{ background: transparent url('img/trees1.png') repeat-x bottom center; }

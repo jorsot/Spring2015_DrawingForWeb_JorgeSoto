@@ -22,7 +22,7 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#454fa0', endColorstr='#1b0009',GradientType=0 ); /* IE6-9 */
 
   height: 782px;
-  width: 1371px;
+  width: 100%;
 
   position: relative;
 }
@@ -38,20 +38,21 @@
 .stars{
   background: transparent url('img/stars.png') no-repeat center center;
   opacity: 0;
+  width: 100%;
 }
 
 .mountain{ background: transparent url('img/volcano.png') no-repeat bottom center; }
 .crater{
-  background: transparent url('img/crater.png') no-repeat 608px 262px;
+  background: transparent url('img/crater.png') no-repeat 50% 262px;
 }
 
 .smoke{
   background: #F00;
   position: absolute;
-    left: 648px;
+    left: 48%;
     top: 320px;
-  transform: translateX(50%);
 }
+
 .smoke ul li{
   border-radius: 50%;
   list-style: none;
@@ -128,8 +129,8 @@
   100%    {top: -300px; opacity: 0; left: 30px;}
 }
 
-.trees-01{ background: transparent url('img/trees2.png') no-repeat bottom center; }
-.trees-02{ background: transparent url('img/trees1.png') no-repeat bottom center; }
+.trees-01{ background: transparent url('img/trees2.png') repeat-x bottom center; }
+.trees-02{ background: transparent url('img/trees1.png') repeat-x bottom center; }
 
     </style>
   </head>

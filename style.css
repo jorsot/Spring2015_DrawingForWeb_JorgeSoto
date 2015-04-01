@@ -8,6 +8,15 @@
 	transition: .3s
 }
 
+p {
+  color: #888;
+  font: .9em 'Slabo 27px', serif;
+  margin: 5%;
+  line-height: 1.4em;
+
+}
+
+
 body{
 	background: transparent url("lorem.png");
   color: black;
@@ -50,7 +59,7 @@ header:hover {
 #wrapper {
 	background: #eee;
 	width: 55%;
-	height: 100%;
+	height: auto;
 	margin: auto;
 	box-shadow: 0px 0px 10px #aaa;
 

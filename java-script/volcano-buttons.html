@@ -3,20 +3,31 @@
 <html>
   <head>
     <link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700|Slabo+27px' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="volcano-style.css">
+    <link rel="stylesheet" href="volcano-buttons-style.css">
     <meta charset="UTF-8">
-    <title>CSS Animation - Volcano</title>
+    <title>CSS Animation - Volcano with Buttons</title>
     <!-- <style type="text/css"></style> -->
   </head>
 
   <body>
-     <div class="container">
-       <div class="stars"></div>
+     <div id="container" class="time">
+       <div id="stars" class="time"></div>
+
+       <div class="buttons">
+         <svg width="300" height="300">
+          <a xlink:href="#">
+            <circle id="smoke_toggle" cx="45" cy="45" r="30" stroke="rgba(68, 230, 255, 0.8)" stroke-width="4" fill="rgba(68, 255, 230, 0.7)" />
+            <text x="30" y="52" fill="white">Smoke</text>
+            <rect id="time_toggle" x="90" y="18" width="55" height="55" stroke="rgba(68, 255, 230, 0.7)" stroke-width="4" fill="rgba(68, 230, 255, 0.8)" />
+            <text x="106" y="52" fill="white">TIME</text>
+          </a>
+         </svg>
+       </div> <!-- close buttons div -->
 
        <div class="volcano">
          <div class="crater"></div>
 
-         <div class="smoke">
+         <div id="smoke">
            <ul>
              <li></li>
              <li></li>
@@ -45,9 +56,10 @@
            <div class="cloud-02"></div>
            <div class="cloud-03"></div>
          </div> <!-- clouds -->
-         <div class="ambient-light"></div>
+         <div id="ambient-light" class="time"></div>
        </div>
 
      </div>
+     <script src="volcano-buttons.js"></script>
   </body>
 </html>

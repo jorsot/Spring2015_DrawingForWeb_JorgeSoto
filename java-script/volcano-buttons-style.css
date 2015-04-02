@@ -3,7 +3,7 @@ margin: 0;
 padding: 0;
 }
 
-.clouds {
+#clouds {
 font-family: 'Amatic SC';
 font: 3em 'Amatic SC', cursive;
 font-weight:700;
@@ -36,7 +36,7 @@ width: 100%;
 position: relative;
 
 }
-#stars, .clouds, .volcano, .mountain, .crater, .trees, .trees-01, .trees-02, #ambient-light{
+#stars, #clouds, .volcano, .mountain, .crater, .trees, .trees-01, .trees-02, #ambient-light{
 
 position: absolute;
 top: 0;
@@ -53,7 +53,7 @@ width: inherit;
 
 }
 
-.clouds div{position:absolute;}
+#clouds div{position:absolute;}
 .cloud-01 {
 background: url('../css-animation/img/cloud1.png') no-repeat;
 width: 100%;
@@ -312,12 +312,12 @@ opacity:.1;
 
 
 
-#container.anim, #stars.anim, #ambient-light.anim {
+#clouds.anim, #container.anim, #stars.anim, #ambient-light.anim {
   animation-play-state: running;
   -webkit-animation-play-state: running;
 }
 
-#container.paused, #stars.paused, #ambient-light.paused {
+#clouds.paused, #container.paused, #stars.paused, #ambient-light.paused {
   animation-play-state: paused;
   -webkit-animation-play-state: paused;
 }

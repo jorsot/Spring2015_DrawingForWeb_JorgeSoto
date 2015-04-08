@@ -5,8 +5,42 @@
   <meta charset="UTF-8">
   <title>i6: Jorge Soto</title>
   <link rel="stylesheet" href="../style.css" type="text/css" />
+  <style>
+
+  html {
+    height: 700px;
+  }
+  #wrapper {
+    position:fixed;
+  }
+  #frames {
+    width: 1950px;
+    height: 450px;
+    position: absolute;
+    top: 50%;
+    margin-top: -125px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  iframe {
+    float: left;
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: #e0e0e0; /* feel free to change or remove this color */
+    border: 0;
+    -webkit-box-shadow: -1px 43px 106px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 43px 106px -2px rgba(0,0,0,0.75);
+    box-shadow: -1px 43px 106px -2px rgba(0,0,0,0.75);
+}
+  </style>
 </head>
 <body>
+  <div id="frames">
+    <iframe src="drawings/drawing-1.html" width="600" height="450"></iframe>
+    <iframe src="drawings/drawing-2.html" width="600" height="450"></iframe>
+    <iframe src="drawings/drawing-3.html" width="600" height="450"></iframe>
+  </div>
   <div id="wrapper">
 
     <header>
@@ -17,7 +51,7 @@
     <div id="primary">
       <div class="container">
 
-<h1 style="text-align: center;">Come Back Soon for this Assignment!</h1>
+<h1 style="text-align: center;">HTML Canvas</h1>
 
 <!-- <div style="clear:both;"></div> -->
 

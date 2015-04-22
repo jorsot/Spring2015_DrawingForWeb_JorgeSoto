@@ -3,37 +3,65 @@
 function setup() {
   createCanvas(600, 450);
   background(240);
+  forest = loadImage('../img/forest.jpg');
   // stroke(255, 0, 0); // (red) remove this line
   // line(0, 0, 600, 450); // remove this line
+
+  //tint variables
+  red = 0;
+  green = 255;
+  blue = 255;
+  opacity = 70;
+
+  rotation = 0;
+
+
+  shapeRotation = false;
+  rotationSpeed = 0;
+
 
 }
 
 function draw() {
 	// Drawing code goes here
-  stroke(0);
-  line(0,0,600,400);
+
+  background(0,70);
+  imageMode(CORNER);
+  tint(red,green,blue,opacity);
+  image(forest,0,0);
+
+  rectMode(CENTER);
+  translate(width/2, height/2);
   noStroke();
 
-  fill (0,0,200,100); //blue
-  rect(200,100,200,200);
 
-  fill(0,200,0,100); //green
-  ellipse(300,200,150,150);
-
-  fill(200,0,0,100); //red
-  triangle(275,225,325,225,300,175);
-
-  fill(0,255,255,100); //cyan
-  quad(300,150, 450, 150, 300, 350, 140, 350);
-
-  translate(300,200);
-
-  fill(255,255,0,100); //yellow
-
-  for (var i = 0; i < 20; i++) {
-    rect(0,0, 75,75);
-    rotate(PI/10);
+  if (shapeRotation == true){
+    push();
+    rotate(rotation);
+    rotation += rotationSpeed;
+    rect(0,0, 150,150);
+    pop();
   }
 
+  if (shapeRotation == false){
+    rotate(rotation);
+    rect(0,0,150,150);
+  }
+
+}
+
+
+function mousePressed() {
+  if (shapeRotation == true){
+    shapeRotation = false;
+  }
+  else{
+    shapeRotation = true;
+  }
+  rotationSpeed = random(-.3,.3)
+
+  if (red == 255){red = 0;} else{red=255;}
+  if (green == 255){green = 0;} else{green=255;}
+  if (blue == 255){blue = 0;} else{blue=255;}
 
 }

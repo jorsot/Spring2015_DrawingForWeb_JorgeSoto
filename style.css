@@ -56,8 +56,6 @@ header:hover {
 
 
 #wrapper {
-  position: absolute;
-  left: 22%;
 	background: #eee;
 	width: 55%;
 	height: auto;
@@ -115,7 +113,7 @@ h1 {
 }
 
 @media only screen and (max-width: 880px){
-#wrapper { width: 90%;}
+#wrapper { width: 90%; margin-left: auto;}
 
 #primary ul li{width: 50%;}
 

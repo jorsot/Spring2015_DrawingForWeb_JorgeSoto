@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Call Sheet</title>
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link href="css/styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body onLoad="getLocation(), displayCallTime()">
+
+<header>
+  <div class="production-title">
+    <h1>Star Wars IX: Force.min.js</h1>
+  </div>
+  <div class="production-info">
+    <ul>
+      <li>Day 1 of 3</li>
+      <li>Tuesday, May 5, 2015</li>
+    </ul>
+  </div>
+</header>
+
+<ul class="modules">
+  <li class="call-time">
+    <div class="info">
+      <b>Call Time</b>
+      <div><a id="call-location">719 Broadway, New York, NY 10003</a></div>
+    </div>
+    <div class="num-display" id="call-time-display">0:00 AM</div>
+  </li>
+  <li class="current-weather">
+    <div class="info">
+      <b id="current-weather-title">Location Temperature</b>
+      <div id="current-weather-description"></div>
+    </div>
+    <div class="num-display" id="current-weather-display"></div>
+  </li>
+  <li class="sunrise-sunset">
+    <div class="info">
+      <b>Sunrise // Sunset</b>
+    </div>
+    <div class="num-display" id="sunset-display">7:10 PM</div>
+    <div class="num-display" id="sunrise-display">5:57 AM</div>
+  </li>
+  <li class="schedule">
+    <div class="info">Shooting Schedule</div>
+  </li>
+  <li class="scene scene-2 ext-day">
+    <div class="scene-number">2</div>
+    <div class="scene-slug">Ext. Washington Square Park - Day</div>
+    <div class="scene-length">2/8 pgs</div>
+  </li>
+  <li class="scene scene-1 int-day">
+    <div class="scene-number">1</div>
+    <div class="scene-slug">Int. Living Room - Day</div>
+    <div class="scene-length">5/8 pgs</div>
+  </li>
+  <li class="scene scene-6 int-day">
+    <div class="scene-number">6</div>
+    <div class="scene-slug">Int. Living Room - Day</div>
+    <div class="scene-length">2 5/8 pgs</div>
+  </li>
+  <li class="scene scene-5 ext-dusk">
+    <div class="scene-number">5</div>
+    <div class="scene-slug">Ext. Coney Island - Dusk</div>
+    <div class="scene-length">3/8 pgs</div>
+  </li>
+  <li class="scene scene-3 int-night">
+    <div class="scene-number">3</div>
+    <div class="scene-slug">Int. Bedroom - Night</div>
+    <div class="scene-length">1/8 pgs</div>
+  </li>
+  <li class="scene scene-4 ext-night">
+    <div class="scene-number">4</div>
+    <div class="scene-slug">Ext. Brooklyn Bridge - Night</div>
+    <div class="scene-length">1 4/8 pgs</div>
+  </li>
+</ul>
+
+<script src="http://i6.cims.nyu.edu/~jc3436/380/canvas/js/p5.js"></script>
+<script src="http://i6.cims.nyu.edu/~jc3436/380/canvas/js/p5.dom.js"></script>
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="js/modernizr.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/chroma.js"></script>
+<!-- <script src="weather.js"></script> -->
+<script src="js/callsheet.js"></script>
+
+</body>
+</html>
